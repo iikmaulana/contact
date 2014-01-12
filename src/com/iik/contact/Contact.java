@@ -11,15 +11,30 @@ package com.iik.contact;
  * @author maulana
  */
 public class Contact {
-    private String nomer;
+    String nomer;
     private String nama;
-    
-    public void setNama(String nama){
+    public Contact(String nama,String nomer){
         this.nama = nama;
-    }
-    public void setNomer(String nomer){
         this.nomer = nomer;
     }
+
+    public String getNomer() {
+        return nomer;
+    }
+
+    public void setNomer(String nomer) {
+        this.nomer = nomer;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+    
+    
     public void setContact(String nama,String nomer){
         this.nama = nama;
         this.nomer = nomer;
@@ -28,11 +43,5 @@ public class Contact {
         System.out.println("nama : " + this.nama + 
                 "\nNomer : " + this.nomer);
     }
-    public String getNama(){
-        return this.nama;
-        
-    }
-    public String getNomer(){
-        return this.nomer;
-    }
+    
  }

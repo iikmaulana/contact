@@ -17,9 +17,9 @@ public class Main {
      */
     public static void main(String[] args) {
         int a;
-        Contact contact = new Contact();
+        
         for (a=1; a<21; a++){
-            contact.setContact("akio" + a, "23890128391" + a);
+            Contact contact = new Contact("uzumaki"+ a , "02934920394" + a);
             contact.printContact();
         }
 //        contact.setNama("iik");
